@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Mile Stone</title>
+ <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+         <link rel="shortcut icon" href="{{url_for('static', filename='favicon/favicon.ico')}}" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+        <script type="module" src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+    </head>
+    <body>
+    <header>
+    <div class="transparent">
+    <div class='logo'>
+    <img id = 'mileStone' src='static/design-materials/Logo.png' alt='logo'>
+    </div>
+        <nav>{%block nav%}{%endblock%}</nav>
+    </div>
+</header>
+    <div id="register"> register </div>
+
+    <div id="login">login</div>
+
+    <div id="logout">logout</div>
+
+    <div id="boards">boards loading...</div>
+
+    <div id="single-board">single board loading</div>
+
+    <footer id="footer">
+    <i>&copy; ColAlexandra </i>
+</footer>
+    </body>
+</html>
