@@ -31,15 +31,15 @@ export let dataHandler = {
             .catch(() => {console.error('Something goes wrong');});
     },
 
-    registerUser: function (name, password) {
-        //adding user to db
-        let dupa = randomUserId(name, password);
-        this._api_post('/register', this._data) => {
-            this._data = users;
-
-
-        })
-    },
+    // registerUser: function (name, password) {
+    //     //adding user to db
+    //     let dupa = randomUserId(name, password);
+    //     this._api_post('/register', this._data) => {
+    //         this._data = users;
+    //
+    //
+    //     }
+    // },
 
     randomUserId: function (name, password) {
         //create random id, check if random id exist, if exist, generate the new one
@@ -107,7 +107,7 @@ export let dataHandler = {
             this._data = boards;
             callback(boards);
         });
-    }
+    },
 
     getBoard: function ( boardId, callback) {
         // the board is retrieved and then the callback function is called with the board
@@ -121,7 +121,7 @@ export let dataHandler = {
 
             callback(board)
         });
-    }
+    },
 
     getStatuses: function (callback) {
         // the statuses are retrieved and then the callback function is called with the statuses
